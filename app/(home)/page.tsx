@@ -17,7 +17,7 @@ export default async function Home() {
       <Header />
 
       <div className="px-5 pt-5">
-        <h2 className="text-xl font-bold">Olá, Marco!</h2>
+        <h2 className="text-xl font-bold">Olá, Marcos!</h2>
         <p className="capitalize text-sm">
           {format(new Date(), "EEEE',' dd 'de' MMMM", {
             locale: ptBR,
@@ -49,7 +49,7 @@ export default async function Home() {
         </div>
       </div>
 
-      <div className="mt-6">
+      <div className="mt-6 mb-[4.5rem]">
         <h2 className="text-sm mb-3 uppercase text-gray-400 font-bold">
           Populares
         </h2>
