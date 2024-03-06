@@ -44,7 +44,7 @@ interface BookingItemProps {
   }>;
 }
 
-const BookingItem = ({ booking }: BookingItemProps) => {
+const BookingItemAdm = ({ booking }: BookingItemProps) => {
  
   // Verifica se booking e booking.service estão definidos
   if (!booking || !booking.service || !booking.user) {
@@ -94,7 +94,7 @@ const BookingItem = ({ booking }: BookingItemProps) => {
               <AvatarFallback>A</AvatarFallback>
             </Avatar>
           
-            <h3 className="text-sm">{booking.barbershop.name}</h3>
+            <h3 className="text-sm">{booking.user.name}</h3>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center flex-1  border-l border-solid border-secondary">
@@ -174,8 +174,8 @@ const BookingItem = ({ booking }: BookingItemProps) => {
 
                     
                    <div className="flex justify-between">
-                    <h3 className="text-gray-400 text-sm">Barbearia</h3>
-                    <h4 className="text-sm ">{booking.barbershop.name}</h4>
+                    <h3 className="text-gray-400 text-sm">Cliente</h3>
+                    <h4 className="text-sm ">{booking.user.name}</h4>
                     </div>
                      
              
@@ -234,6 +234,5 @@ const BookingItem = ({ booking }: BookingItemProps) => {
   );
 };
 
-export default BookingItem;
-
+export default BookingItemAdm;
 
